@@ -2,12 +2,13 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "assets/AssetManifest.json": "8df8923fa317d25dc534b7b358c3d739",
-"assets/FontManifest.json": "6085a16074d522b04619b886aed72674",
+
+const RESOURCES = {"assets/AssetManifest.json": "19345ab5d2e873febba79b3ed7b565d3",
+"assets/AssetManifest.smcbin": "d881aefb35786d06898167938a75f179",
+"assets/FontManifest.json": "7df7ef203e772ce2a11afd0e19dc497d",
 "assets/fonts/Fahkwang-Bold.ttf": "2eafaf600b3fed3a49a29c98b092b3bb",
 "assets/fonts/Fahkwang-Regular.ttf": "18982a343a4711353a558a7ade28a0eb",
-"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
+"assets/fonts/MaterialIcons-Regular.otf": "8e2a07523aa0682d0eac746d35e187d8",
 "assets/fonts/SF-Pro-Display-Bold.otf": "88b6e0b21919fa6abb7899faa1571f01",
 "assets/fonts/SF-Pro-Display-Medium.otf": "ded5efe3e8ec62553c3b10f4edd4ca8d",
 "assets/fonts/SF-Pro-Display-Regular.otf": "a07152f3f0c03589a75b218b2c6536cb",
@@ -41,6 +42,7 @@ const RESOURCES = {
 "assets/images/icons/ic_arrow_right_circle_outline.svg": "25cd363d6f5480522dd4ae5de3136eaa",
 "assets/images/icons/ic_arrow_right_new.svg": "9c7b6baab8f3a2a30a46bf11c7cfb62e",
 "assets/images/icons/ic_arrow_right_new2.svg": "7abae55721e047474849dd22f9649942",
+"assets/images/icons/ic_arrow_square_left.svg": "b8be21778c844589d032e19c036a5e35",
 "assets/images/icons/ic_back.svg": "da857db08a01d135a7a18dfb3e9a45d8",
 "assets/images/icons/ic_back_create_hall.svg": "eec9a8c17c2cc754f07b5947ca629b46",
 "assets/images/icons/ic_bookmark.svg": "7a87f52afdceabc89cc2e4046533b101",
@@ -64,7 +66,7 @@ const RESOURCES = {
 "assets/images/icons/ic_create_hall_result_setting.svg": "994a7cd24d267c953541503bee1e111e",
 "assets/images/icons/ic_datetime.svg": "570a5e94d557a5720da92a33cb15f03a",
 "assets/images/icons/ic_delete.svg": "3c867f7faea18781ab3d59fc51c30513",
-"assets/images/icons/ic_delete_bank.svg": "5fe6b166e8e42a5308e306360ea76343",
+"assets/images/icons/ic_delete_bank.svg": "76ecd346360fbd06569e4c75d2314196",
 "assets/images/icons/ic_delete_event.svg": "ed1c9e68d6d3ed70c86007672ae18dfe",
 "assets/images/icons/ic_del_event.svg": "cdd035d664492e361097edb00da3e104",
 "assets/images/icons/ic_detail.svg": "ff92043952405f9ec206e898a89cd3d1",
@@ -111,11 +113,13 @@ const RESOURCES = {
 "assets/images/icons/ic_like.svg": "c73a2c4e811da4670b90cc60e6d2781e",
 "assets/images/icons/ic_liked.svg": "f05bea563b88f3f83ffd64dd4618202d",
 "assets/images/icons/ic_location.svg": "9bee9282a75f973b2257e5a9118b40be",
+"assets/images/icons/ic_location_border.svg": "447990685998583f7b3c1a592cb671bc",
 "assets/images/icons/ic_location_new.svg": "d00eefb0499844ebcd6fead3ae2f97fe",
 "assets/images/icons/ic_lock.svg": "ae8806246e3f142e5b5a0b44bc0db737",
-"assets/images/icons/ic_logo.png": "acaddfb973f2e0deb01639ca92af9fab",
-"assets/images/icons/ic_logo_2.png": "6493d18451c970a8ccccc9ebaf1092da",
-"assets/images/icons/ic_logo_3.png": "7a89ea0e8d791494ed4bf3904d393641",
+"assets/images/icons/ic_lock_alpha.svg": "30f511a7c62e743e5b718ec8505006b5",
+"assets/images/icons/ic_logo.png": "ee1c40a6420450748919e768a6aa9393",
+"assets/images/icons/ic_logo_2.png": "a73538361752d88dd682feac50d6949f",
+"assets/images/icons/ic_logo_3.png": "d5fb374bba7f37fbb8460e1e9bfa7a9f",
 "assets/images/icons/ic_logo_4.svg": "9848e91dd89abacb781a22e29211aa7d",
 "assets/images/icons/ic_logo_mo.svg": "e950780266a74e19e2b4c67df1285fe1",
 "assets/images/icons/ic_logo_notification.png": "b5931675c35f4cbe49c02e9b6173c37e",
@@ -127,7 +131,7 @@ const RESOURCES = {
 "assets/images/icons/ic_menu_dot.svg": "9413bfe69e4e308590c69b4702d69591",
 "assets/images/icons/ic_message_text.svg": "ed8609c04b71b647b41b65fbc5500c68",
 "assets/images/icons/ic_messenger.svg": "472767e18d0f313d86c95b95eb7fab07",
-"assets/images/icons/ic_moon.svg": "d1ad38b75fac997cce6e0e4d69cced86",
+"assets/images/icons/ic_moon.svg": "4d48c39a8e521b404cc392ff6eecebcd",
 "assets/images/icons/ic_more_horiz.svg": "847203f5c47e15fc5d90011a42a62e8b",
 "assets/images/icons/ic_mourn.svg": "59bd86437c7ebdabfe8d0b673ef80b85",
 "assets/images/icons/ic_my_memory_active.svg": "305d6c1acb1502f6c1c19b9fcde8049a",
@@ -143,8 +147,8 @@ const RESOURCES = {
 "assets/images/icons/ic_next_circle_new.svg": "9ceae7310792b21750299a079d3a2d1f",
 "assets/images/icons/ic_night.svg": "db71a5aaf95ee8d25269348b0b3529ef",
 "assets/images/icons/ic_note.svg": "ec54e028d0a33cd73a285cf715f1ab78",
-"assets/images/icons/ic_noti_off.svg": "672e23493d3f2e345d287520344fd689",
-"assets/images/icons/ic_noti_on.svg": "5b91cd413c339923b2046ab11b591652",
+"assets/images/icons/ic_noti_off.svg": "637b0155ecbc34af6a967464c0b88483",
+"assets/images/icons/ic_noti_on.svg": "ee2b8502ca85ed855b454fa2be62079f",
 "assets/images/icons/ic_not_selected.svg": "3103593689b9f4b04e0dfc7039b5290f",
 "assets/images/icons/ic_people.svg": "b6f0f666a8bb58d48b2ee33f3dce9186",
 "assets/images/icons/ic_people_2.svg": "aca96bbfd0d0167b35336318341b2955",
@@ -221,9 +225,9 @@ const RESOURCES = {
 "assets/images/images/0.75x/img_google_meet_02.png": "12f978e9fc9df4ae6b39181aabdca27b",
 "assets/images/images/0.75x/img_google_meet_03.png": "76cf80aeff34f879af18a46e5ecc86ba",
 "assets/images/images/0.75x/img_my_memorial.png": "88f6c98f7372bb7730738520329caf00",
-"assets/images/images/0.75x/img_new_create_hall.png": "c8eea2b2479f51468dbe77ee7796b968",
+"assets/images/images/0.75x/img_new_create_hall.png": "ce3886d308862510a101ec2c72893486",
 "assets/images/images/0.75x/img_obituary.png": "9a1912574704e8cb556b1d3e8c12c3d4",
-"assets/images/images/0.75x/img_old_create_hall.png": "f1fc1914610743995fc304598e9a54aa",
+"assets/images/images/0.75x/img_old_create_hall.png": "3dfec8a94e1a0d04e8643bd3da63075b",
 "assets/images/images/0.75x/img_profile_header.png": "eeb625d5b9b2e2bc5b528e2ec9b2df35",
 "assets/images/images/0.75x/img_search_no_result.png": "c49d2a1d15dec11daecfaf9f417fb1c5",
 "assets/images/images/0.75x/img_signin_header.png": "70275aaeb6e78e77c362b98640dd1845",
@@ -243,9 +247,9 @@ const RESOURCES = {
 "assets/images/images/1.5x/img_google_meet_02.png": "9962eb358a1fe83d53a22b2b96f32321",
 "assets/images/images/1.5x/img_google_meet_03.png": "c4b0a5238fd09ff19ec13b907139b8d5",
 "assets/images/images/1.5x/img_my_memorial.png": "7c9c6496c51bbbd75d463098d97e79a7",
-"assets/images/images/1.5x/img_new_create_hall.png": "8baa4479a9c0bdd5abac98d7ed33aea3",
+"assets/images/images/1.5x/img_new_create_hall.png": "623b235c04240a670a11b878548c6b1c",
 "assets/images/images/1.5x/img_obituary.png": "0aa72cac43c4d4991bdee82a700d091e",
-"assets/images/images/1.5x/img_old_create_hall.png": "4f4226ff854a43a706de5a76b62beef6",
+"assets/images/images/1.5x/img_old_create_hall.png": "2630caa952a2f2d6e9c1ce8a442ca5ca",
 "assets/images/images/1.5x/img_profile_header.png": "eea2bb054c8bd2b92cdf97d2d3c5a3cb",
 "assets/images/images/1.5x/img_search_no_result.png": "d48742a6ecfcf84f30ea146a579f2362",
 "assets/images/images/1.5x/img_signin_header.png": "7d90e81a5e5bda8d2d0df3860a0b03e9",
@@ -270,9 +274,9 @@ const RESOURCES = {
 "assets/images/images/2x/img_messenger.png": "bcdfdc8ffbda4350475b4f690b003a11",
 "assets/images/images/2x/img_my_memorial.png": "cd15f91e6d45b23f8de80bf81c4ad953",
 "assets/images/images/2x/img_my_memorials.png": "0e5485f999128fca7c9834153a6acd57",
-"assets/images/images/2x/img_new_create_hall.png": "7acc2dde0f548151971bdc44c728df21",
+"assets/images/images/2x/img_new_create_hall.png": "e89a524126cba0448817012385d88f63",
 "assets/images/images/2x/img_obituary.png": "2f682f6445efc80418bde7bc26685d36",
-"assets/images/images/2x/img_old_create_hall.png": "a6be449ca370356e7e7356e09ed0f036",
+"assets/images/images/2x/img_old_create_hall.png": "1a4fe2c4c20270a9c08c35d8dacc6718",
 "assets/images/images/2x/img_profile_header.png": "57633674a97b457cbbf5d78d0553b0b3",
 "assets/images/images/2x/img_search_no_result.png": "d39a1203adbd51c70efd062119a2f719",
 "assets/images/images/2x/img_signin_header.png": "91fcaaede50cb14ff72b0500a84b7cea",
@@ -300,9 +304,9 @@ const RESOURCES = {
 "assets/images/images/3x/img_messenger.png": "e139206a4306a9537dbe4f4ef8c43126",
 "assets/images/images/3x/img_my_memorial.png": "9344232a4645259c3f064880c91d59d9",
 "assets/images/images/3x/img_my_memorials.png": "708af156c44d03631f78e1991d170df2",
-"assets/images/images/3x/img_new_create_hall.png": "8bffe7f318c5d6debfc6e90ce39c542b",
+"assets/images/images/3x/img_new_create_hall.png": "d71ec1b98f39aeab9c7bd38fd4df3e45",
 "assets/images/images/3x/img_obituary.png": "78a9211032d59d1d68b81c101b087efd",
-"assets/images/images/3x/img_old_create_hall.png": "7a86041947f5ff5e1698408f1f359761",
+"assets/images/images/3x/img_old_create_hall.png": "1f3ec29a4ed796a75425af298a769e2d",
 "assets/images/images/3x/img_profile_header.png": "0b0425a90d2ed76d5537f2e2edf1e177",
 "assets/images/images/3x/img_search_no_result.png": "d5442f2e43296f42335d1c16327742e2",
 "assets/images/images/3x/img_signin_header.png": "0ab67a5a31036f175993f21da39dd7d5",
@@ -326,9 +330,9 @@ const RESOURCES = {
 "assets/images/images/4x/img_google_meet_02.png": "1800bce0dccf84cb964397f7ff2e0b28",
 "assets/images/images/4x/img_google_meet_03.png": "4e5e3e70da7bab87f82236d970caa3cf",
 "assets/images/images/4x/img_my_memorial.png": "382e24315901423396bcc66e10e2f957",
-"assets/images/images/4x/img_new_create_hall.png": "bb36362f417078b0f1bd6ec63b93a566",
+"assets/images/images/4x/img_new_create_hall.png": "af42ad35f4d1b0354f155a2b179b8da9",
 "assets/images/images/4x/img_obituary.png": "4ead1e536a2144cfa76eebbf88837bdd",
-"assets/images/images/4x/img_old_create_hall.png": "dfbc7e29acc79e424822dc70347cf06f",
+"assets/images/images/4x/img_old_create_hall.png": "34b079f4137eeb59aec9fdb74c168f88",
 "assets/images/images/4x/img_profile_header.png": "e095f0f6b98f1ecc71216ffad66913b4",
 "assets/images/images/4x/img_search_no_result.png": "142114e4b97889b789638e76a3331a17",
 "assets/images/images/4x/img_signin_header.png": "301eac348ca458addcd2e019ef3ddc20",
@@ -345,6 +349,8 @@ const RESOURCES = {
 "assets/images/images/bg_letter_background.png": "0c068dc1f4665b6e6053eb46a304443e",
 "assets/images/images/bg_my_memory_hall_button.png": "973f5aa5682d243b028df75a481f3ab1",
 "assets/images/images/bg_result_create_hall.jpg": "24b00e37de42dfa495da0f0d3f67c410",
+"assets/images/images/bg_result_create_hall.png": "172dc59af4b2c7d8ab1e7f7e2e4710b4",
+"assets/images/images/bg_web.png": "0a57503b5187c37cd731d0a9f20cc2c0",
 "assets/images/images/img_articles_condolence.png": "92c3bbfc1be82cf7caa8eb4c64f6ae11",
 "assets/images/images/img_auth_header.png": "e8c1121ed476bc99e10f9567d608d5f6",
 "assets/images/images/img_avatar_placeholder.png": "260fc3c2a726055074ce436e3842c523",
@@ -356,14 +362,14 @@ const RESOURCES = {
 "assets/images/images/img_google_meet_01.png": "c4dbce9967657ff76924e50620a3f7d5",
 "assets/images/images/img_google_meet_02.png": "e85c100058d3bc7702520d9ca79027dc",
 "assets/images/images/img_google_meet_03.png": "3f8b35f99f838c74a7f79533bc318a73",
-"assets/images/images/img_intro_slide_2.png": "f5afd2e1b3ab7a51b6e9bab8d38b9b56",
-"assets/images/images/img_intro_slide_3.png": "297fa37e22ac2c553c8487f9ad614103",
+"assets/images/images/img_intro_slide_2.png": "6063da95dc18dc0f453ff4ec058b90de",
+"assets/images/images/img_intro_slide_3.png": "283596a599537851e4b4d4e55e09a7ae",
 "assets/images/images/img_messenger.png": "4f8623938d3c0297c9f623eca1f99079",
 "assets/images/images/img_my_memorial.png": "1fd04e8e4e9c553f07e6f7fdf1cd4400",
 "assets/images/images/img_my_memorials.png": "7da3657c5f1610cc6e4e7d8c4084babb",
-"assets/images/images/img_new_create_hall.png": "4b29baefbea0e0ad13f381e0de2f4473",
+"assets/images/images/img_new_create_hall.png": "33e1f884f91e52db67cab19bc580bf62",
 "assets/images/images/img_obituary.png": "3dab59e969d61ea038b714a048204000",
-"assets/images/images/img_old_create_hall.png": "8b1eb25ca2a4db6fea866a3bcdce59f0",
+"assets/images/images/img_old_create_hall.png": "ef0d5be1dbb3dc609808eb536d4bc3c8",
 "assets/images/images/img_profile_header.png": "b9d9533acaea93e2b5ca19836594fc56",
 "assets/images/images/img_search_no_result.png": "56c48228817a06887d4c6783061a47e1",
 "assets/images/images/img_share_config.png": "dab86c1c311ec3f0698fdd8e226c7a13",
@@ -371,32 +377,35 @@ const RESOURCES = {
 "assets/images/images/img_stored_photos.png": "ecc5d73592a0fb42d7aea708c22d0154",
 "assets/images/images/img_telegram.png": "9c8a04b4012cdf895e148ca46b7de95e",
 "assets/images/images/img_zalo.png": "92c579cc2f7fa36545851a7e202dab42",
-"assets/NOTICES": "134ad2e41dee88215121e94094faf7e7",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/NOTICES": "12bd6af08f5e42decb748e56246ff533",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "57d849d738900cfd590e9adc7e208250",
+"assets/packages/dropdown_button2/assets/fonts/Roboto-Regular.ttf": "8a36205bd9b83e03af0591a004bc97f4",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
+"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
+"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
+"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
+"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
+"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
+"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
+"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
+"flutter.js": "6b515e434cea20006b3ef1726d2c8894",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "66ac9e3ce2ea0956d2f92239f1c82f5e",
-"/": "66ac9e3ce2ea0956d2f92239f1c82f5e",
-"main.dart.js": "95c7a3a8eb5609f5ccdaa7afbc9e9e69",
+"index.html": "ae9fef222542527bad377545c81bab42",
+"/": "ae9fef222542527bad377545c81bab42",
+"main.dart.js": "638d239abd6ff412b667382c7cf8c0af",
 "manifest.json": "57e643fa21ac0843174c4bb77fd79cf7",
-"version.json": "030927fa89ad74160736cbfec8e4a9d4"
-};
-
+"version.json": "6df1f00f436c97d9a74320d315fcddf1"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -407,7 +416,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -429,6 +437,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -454,6 +464,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -464,7 +476,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -504,7 +515,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -517,7 +527,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -538,7 +547,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {
